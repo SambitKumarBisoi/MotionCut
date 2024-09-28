@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="slider-container">
+        <div class="slider">
+            <div class="slide active">
+                <img src="moutain1.png" alt="Beautiful">
+                <div class="caption">
+                    <h2>Beautiful</h2>
+                    <p>Adventure is never far away</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="mountain3.png" alt="Mountain View">
+                <div class="caption">
+                    <h2>Mountain Escape</h2>
+                    <p>Find peace in the wilderness</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="mountain2.png" alt="Snow Peaks">
+                <div class="caption">
+                    <h2>Snowy Peaks</h2>
+                    <p>Reach the summit of tranquility</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="prev" onclick="prevSlide()">&#10094;</div>
+        <div class="next" onclick="nextSlide()">&#10095;</div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

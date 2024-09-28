@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #0c0c0c;
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+
+.Nav-container ul{
+    padding: 10px;
+}
+.Nav-container a{
+    font-size: 15px;
+    margin-right: 20px;
+    
+}
+.Nav-container a:hover{
+    color: red;
+}
+
+.image-container {
+    position: relative;
+    text-align: center; 
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto; 
+  }
+  
+  .text-overlay-text-1 {
+    position: absolute;
+    top: 30%;  
+    left: 18%; 
+    transform: translate(-50%, -50%);
+    color: #ff0000; 
+    font-size: 50px; 
+    font-weight: bold;
+    font-family:'poppins';
+  }
+  .text-overlay-text-2 {
+    position: absolute;
+    top: 40%;
+    left: 18%; 
+    transform: translate(-50%, -50%); 
+    color: #0a192f;
+    font-size: 50px; 
+    font-weight: bold; 
+    font-family:'poppins';
+  }
+  .text-overlay-desc{
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 22%; 
+    transform: translate(-50%, -50%); 
+    color: #000000; 
+    font-size: 10px; 
+    font-weight: lighter;
+    font-family:'poppins';
+  }
+  .text-overlay-desc button{
+    left: 5%;
+  }
+  .cart-section{
+    padding: 50px;
+  }
+  .cart-section img{
+    padding-top: 20px;
+    height:20rem ;
+  }
+  
+  .Product-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .Product-heading .pro {
+    color: #ff0000;
+  }
+  
+  .Product-heading h2 {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .Product-heading h2:after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    margin-top: 15px;
+  }
+  /* Responsive Styles for Tablets and Small Screens */
+@media (max-width: 768px) {
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .text-overlay-text-1 {
+    top: 10%;
+    font-size: 1.5em;
+  }
+
+  .text-overlay-text-2 {
+    top: 20%;
+    font-size: 1.2em;
+  }
+
+  .text-overlay-desc {
+    top: 30%;
+    font-size: 0.9em;
+  }
+
+  .Product-heading h2 {
+    font-size: 1.5em;
+  }
+
+  .cart-section .col-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .footer .col-md-4 h5 {
+    font-size: 1.2em;
+  }
+}
+
+/* Responsive Styles for Mobile Screens */
+@media (max-width: 576px) {
+  .navbar-brand img {
+    width: 200px;
+  }
+
+  .text-overlay-text-1 {
+    top: 10%;
+    font-size: 1.3em;
+  }
+
+  .text-overlay-text-2 {
+    top: 20%;
+    font-size: 1em;
+  }
+
+  .text-overlay-desc {
+    top: 50%;
+    right: 29%;
+    font-size: 0.8em;
+  }
+
+  .Product-heading h2 {
+    font-size: 1.2em;
+  }
+
+  .cart-section .col-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .footer .col-md-4 h5 {
+    font-size: 1em;
+  }
+}
